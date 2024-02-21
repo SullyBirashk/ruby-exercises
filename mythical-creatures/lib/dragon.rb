@@ -1,4 +1,5 @@
 class Dragon
+    attr_reader :name, :rider, :color
 
     def initialize(name, color, rider)
         @name = name
@@ -6,18 +7,6 @@ class Dragon
         @color = color
         @hungry = true
         @eat = 0
-    end
-
-    def name
-        @name
-    end
-
-    def rider
-        @rider
-    end
-
-    def color
-        @color
     end
 
     def hungry?
