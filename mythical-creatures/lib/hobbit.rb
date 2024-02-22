@@ -1,5 +1,6 @@
 require 'pry'
 class Hobbit
+    attr_reader :name, :disposition, :age
 
     def initialize(name, disposition='homebody')
         @name = name
@@ -7,18 +8,6 @@ class Hobbit
         @age = 0
         @adult = false
         @old = false
-    end
-
-    def name
-        @name
-    end
-
-    def disposition
-        @disposition
-    end
-
-    def age
-        @age
     end
 
     def celebrate_birthday
